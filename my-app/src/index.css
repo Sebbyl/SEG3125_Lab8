@@ -1,0 +1,13 @@
+h1{
+  text-align: center;
+}
+
+.nav{
+  border-bottom: 1px solid black;
+}
+img{
+  margin:10px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
