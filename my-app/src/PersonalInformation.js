@@ -78,6 +78,15 @@ const PersonalInformation = () =>{
                     onChange = {(e) => setCVV(e.target.value)}
                     required></input><br/><br/>
                     {CVVErr && <span style = {{color:"red"}}>Your CVV is invalid!<br/></span>}
+
+                    <label for = "expDate">Expiry date<span style = {{color:"red"}}>*</span></label><br/>
+                    <input 
+                        type = "month" 
+                        id = "expDate" 
+                        name = "info" 
+                       
+                        required></input><br/><br/>
+                        
                 
                 <button type = "submit" className = "btn bg-success" onClick = {() => submitHandler} >Reserve</button>
             <br/><br/>

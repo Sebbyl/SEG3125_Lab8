@@ -26,7 +26,7 @@ const FindHotel = () =>{
         sessionStorage.setItem('guests', JSON.stringify(guests))
         sessionStorage.setItem('lodging', JSON.stringify(lodging))
         sessionStorage.setItem('price', JSON.stringify(price))
-        console.log(lodging)
+        //console.log(lodging)
         history.push('/SelectHotel') 
          
     }
@@ -70,6 +70,7 @@ const FindHotel = () =>{
                         value = {guests}
                         onChange = {(e) => setGuests(e.target.value)}
                         required>
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -92,7 +93,7 @@ const FindHotel = () =>{
                     <option>House</option>
                     </select><br/><br/>
 
-                    <label for = "price">Price Range (Per night)<span style = {{color:"red"}}>*</span></label><br/>
+                    <label for = "price">Price Range (Per night)</label><br/>
                     <select 
                         type = "text" 
                         id = "price" 
@@ -100,7 +101,8 @@ const FindHotel = () =>{
                         style = {{width:'auto'}}
                         value = {price}
                         onChange = {(e) => setPrice(e.target.value)}
-                        required>
+                        >
+                        <option>Any</option>
                         <option>$0-$149</option>
                         <option>$150-$249</option>
                         <option>$250-$349</option>
